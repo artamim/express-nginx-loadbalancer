@@ -27,11 +27,16 @@ express-nginx-loadbalancer/
    cd express-nginx-loadbalancer
    ```
 2. Start the application:
-   ```bash
-   docker compose up -d
-   ```
-3. Access at `http://localhost`. Refresh to see different container names due to load balancing.
-4. Stop the application:
+   - To build and start the services (use this the first time or after changes to the code or Dockerfile):
+     ```bash
+     docker compose up -d --build
+     ```
+   - To start the services without rebuilding (if the images already exist):
+      ```bash
+      docker compose up -d
+      ```
+4. Access at `http://localhost`. Refresh to see different container names due to load balancing.
+5. Stop the application:
    ```bash
    docker compose down
    ```
