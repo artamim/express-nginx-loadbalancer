@@ -1,6 +1,6 @@
 # Express.js with Nginx Load Balancer
 
-A Dockerized Express.js application with multiple instances, load-balanced by Nginx, serving a simple HTML page that displays the container name.
+A Dockerized Express.js application with multiple instances, load-balanced by Nginx, serving a simple HTML page.
 
 ## Prerequisites
 - Docker
